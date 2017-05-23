@@ -650,9 +650,13 @@ Quickly select a period to see total cash movement and transactions. </p>       
 <script type='text/javascript' src='https://adamdicken123.github.io/flo/wp-includes/js/wp-embed.min.js?ver=4.7.5'></script>
     <!-- make reveal calls last -->
     <script>
+    if(jQuery(window).width() > 767) {
       sr.reveal('.col-md-7.col-sm-offset-1', {distance: '200px', delay: 0, scale:1, origin: 'right', duration:1000});
       sr.reveal('.col-md-7.mb-xs-24', {distance: '200px', delay: 0, scale:1, origin: 'left', duration:1000});
-
+    }
+    else {
+      sr.reveal('.col-md-7', {distance: '50px', delay: 0, scale:1, duration:1000});
+    }
     </script>
 </body>
 </html>
