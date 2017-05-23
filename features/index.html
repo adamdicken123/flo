@@ -197,6 +197,19 @@ jQuery("a.fancybox").fancybox({
 </script>
 <!-- END Fancybox for WordPress -->
 <style type="text/css"></style>		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		
+		    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+      window.sr = ScrollReveal();
+
+      // Add class to <html> if ScrollReveal is supported
+      // Note: this method is deprecated, and only works in version 3
+      if (sr.isSupported()) {
+        document.documentElement.classList.add('sr');
+      }
+
+    </script>
+		
 		</head>
 
 <body class="page-template page-template-page-templates page-template-template-features page-template-page-templatestemplate-features-php page page-id-28 has-sidebar-right">
@@ -635,6 +648,11 @@ Quickly select a period to see total cash movement and transactions. </p>       
 <script type='text/javascript' src='https://adamdicken123.github.io/flo/wp-content/themes/shapely-Mod3/js/owl-carousel/owl.carousel.min.js?ver=20160115'></script>
 <script type='text/javascript' src='https://adamdicken123.github.io/flo/wp-content/themes/shapely-Mod3/js/shapely-scripts.js?ver=20160115'></script>
 <script type='text/javascript' src='https://adamdicken123.github.io/flo/wp-includes/js/wp-embed.min.js?ver=4.7.5'></script>
+    <!-- make reveal calls last -->
+    <script>
+      sr.reveal('.col-md-7.col-sm-offset-1', {distance: '200px', delay: 0, scale:1, origin: 'right', duration:1000});
+      sr.reveal('.col-md-7.mb-xs-24', {distance: '200px', delay: 0, scale:1, origin: 'left', duration:1000});
 
+    </script>
 </body>
 </html>
