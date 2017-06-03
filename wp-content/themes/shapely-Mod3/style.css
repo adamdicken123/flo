@@ -1192,7 +1192,7 @@ blockquote {
 
 @media all and (max-width: 767px) {
     br {
-        display: none;
+        /*display: none;*/
     }
 
     blockquote {
